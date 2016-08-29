@@ -1,16 +1,16 @@
 from django.shortcuts import render
-from .serializers import BoardSerializer, CategorySerializer, CardSerializer
+from .serializers import QuestionSerializer, AnswerSerializer, CommentSerializer
 from rest_framework import viewsets
 from django.contrib.auth.decorators import login_required
-# from django.http import HttpResponse
-from .models import Board, Card, Category
+from django.http import HttpResponse
+from .models import Question, Answer, Comment
 
 
 # @login_required
 def index(request):
-    return render(request, 'board.html')
+    return HttpResponse('hello bitches')
 
 
-class BoardViewSet(viewsets.ModelViewSet):
-    serializer_class = BoardSerializer
-    queryset = Board.objects.all().order_by('name')
+class QuestionViewSet(viewsets.ModelViewSet):
+    serializer_class = QuestionSerializer
+    queryset = Question.objects.all().order_by('title')
