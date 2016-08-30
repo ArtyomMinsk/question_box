@@ -21,6 +21,6 @@ class Comment(models.Model):
     user = models.ForeignKey(User)
     comment_text = models.TextField()
 
-    # def calculate_score(self):
-    #     self.user_vote.all()
-    #     self.user_vote.all().filter
+   # def calculate_score(self):
+   #     self.user_vote.all()
+   #     self.user_vote.all().filter

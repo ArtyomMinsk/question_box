@@ -18,26 +18,26 @@
  Would you like to build/design your own house?
  Which form of public transport do you prefer?
  What talents do you have?
- Can you juggle?
- Can you solve a rubix cube?
- Do you have a cherished childhood teddybear?
- Are you psychic in any way?
- Are you a good dancer?
- Are you a good singer?
- Are you a good cook?
- Are you a good artist?
- Are you a good listener?
- Are you a good public speaker?
- Are you a good babysitter?
- Are you a good mechanic?
- Are you a good diplomat?
- Are you a good employee?
- Are you a good dresser?
- Are you a good swimmer?
- Are you a good skier?
- Are you a good lover?
- Are you a good musician?
- Are you a good comedian?
+ Can you juggle?+You have to juggle with fire balls.+No, I can’t.+Yes, I can.+Of course, it’s easy. 
+ Can you solve a rubix cube?+It’s a cube with different colors.+No, I can’t.+Of course, it’s easy. 
+ Do you have a cherished childhood teddybear?+I mean Russian grizzly bear.+No, I don’t.+Yes, I do.+Of course I do. 
+ Are you psychic in any way?+I’ve no idea what that means.+I don’t either.+Neither do I.+Yes I do.
+ Are you a good dancer?+I like Irish dancing.+No, I am not.+Yes, I am.+Of course I am.
+ Are you a good singer?+I like to sing country songs.+No, I am not.+Of course I am.
+ Are you a good cook?+I like to cook babka.+No, I am not.+Yes, I am.+Of course I am.
+ Are you a good artist?+I like acting drama.+Yes, I am a good artist.+Of course I am.
+ Are you a good listener?+I like listen to people.+No, I am not.+Yes, I am.+Of course I am.
+ Are you a good public speaker?+I hate speak on public.+No, I am not.+Yes, I am.
+ Are you a good babysitter?+I like big kidds.+No, I am not.+Of course I am.
+ Are you a good mechanic?+I don’t understand anything in cars.+No, I am not.+Yes, I am.+Of course I am.
+ Are you a good diplomat?+I like politics.+No, I am not.+Of course I am.
+ Are you a good employee?+I am the best in the company.+No, I am not.+Yes, I am too.+Of course I am the best.
+ Are you a good dresser?+I like toxido.+No, I am not.+I like to be naked.+Of course I am.
+ Are you a good swimmer?+I swim like a girl.+No, I am not.+Yes, I am.+Of course I am.
+ Are you a good skier?+I like mountains a lot and I can do snowboarding.+Yes, I am.+Of course I am.
+ Are you a good lover?+I am perfect with women.+No, I am not.+Yes, I am.
+ Are you a good musician?+I like to play drums.+No, I am not.+Of course I am.
+ Are you a good comedian?+I like make people laugh.+Of course I am.
  Are you a good cleaner?
  Are you a good actor?
  Are you a good writer?
