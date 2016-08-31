@@ -4,8 +4,8 @@ from slack_app import views
 from django.contrib import admin
 
 router = routers.DefaultRouter()
-router.register(r'Question', views.QuestionViewSet)
-# router.register(r'Answer', views.AnswerViewSet)
+router.register(r'question', views.QuestionViewSet)
+router.register(r'answer', views.AnswerViewSet)
 # router.register(r'Comment', views.CommentViewSet)
 
 urlpatterns = [
