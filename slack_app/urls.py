@@ -15,5 +15,7 @@ urlpatterns = [
     url(r'^question/$', views.question, name='question'),
     url(r'^$', login, name='login'),
     url(r'^login/$', login, name='login'),
-    url(r'^logout/$', logout, {'next_page': '/login'}, name='logout')
+    url(r'^logout/$', logout, {'next_page': '/login'}, name='logout'),
+    url(r'^search/$', views.search, name='search'),
+
     ]

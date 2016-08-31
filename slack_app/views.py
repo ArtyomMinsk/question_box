@@ -15,11 +15,15 @@ def question(request):
     return render(request, 'slack_app/question.html')
 
 
+def search(request):
+    return render(request, 'slack_app/search.html')
+
+
 def QuestionList(request):
     q_id = request.GET.get('id')
-    title = request.GET.get('title')
+    title = request.GET.get('title')  # <--- you could add a default if needed ('title', 'DEFAULT VAL')
     tags = request.GET.get('tags')
-    sort = request.GET.get('sort')
+    sort = request.GET.get('sort') # GET QUERYSET !!
 
     if q_id is not None:
         these_questions = Question.objects.filter(id=int(q_id))
