@@ -11,7 +11,8 @@ class Question(models.Model):
 
 class Answer(models.Model):
     answer_text = models.TextField()
-    user_vote = models.IntegerField()
+    user_up_vote = models.IntegerField()
+    user_down_vote = models.IntegerField()
     question = models.ForeignKey(Question)
     user = models.ForeignKey(User)
 

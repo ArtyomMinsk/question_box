@@ -1,0 +1,29 @@
+Q_id:Question
+=======================================
+
+1:  What is something you have tried, but will never do again?
+2:  What quirky habit do you have?
+3:  Who is your best friend?
+4:  What is the one thing you did in your past you wish you could undo?
+5:  What is your biggest fear?
+6:  What is the one place in the world you wish you lived in?
+7:  Would you rather be loved or have a lot of money?
+8:  What is the happiest memory from your childhood?
+9:  What is the most embarrassing moment of your life?
+
+
+A_id:Answer
+===========
+1.1:    eating crickets
+1.2:    ice skating
+2.0:    chew my lip
+3.1:    Chewbacca
+3.2:    Chris Tucker
+
+
+C_id:Comment
+============
+1.0:    Why do you want to know?
+2.1:    Leave me alone.
+2.2:    That's a great comment.
+3.1:    Did you think of that all by yourself?
