@@ -6,11 +6,38 @@
 
 {% block body %}
 <h1> Search page if ever needed !</h1>
-        <div id="thumbsup">
+        <div>
             <p>
-                <img src="{% static 'images/thumbs-up.jpg' %}" alt="thumb" style="width:82px;height:100px;">
+                <img src="{% static 'images/thumbs-up.jpg' %}" alt="thumb" STYLE="position:absolute; TOP:135px; LEFT:70px;
+                position:absolute; width:82px; height:100px;">
+                <img src="{% static 'images/thumbs-down.jpg' %}" alt="thumb" style="position:absolute; TOP:135px; RIGHT:70px;
+                position:absolute; width:82px; height:100px;">
+
             </p>
     </div>
+    <div id="box4q">
+    <!-- <div id="box4q"> -->
+        <h2>Ask a question:</h2>
+        <textarea cols="75" rows="5">
+        Please enter your question here...
+        </textarea><br>
+        <!-- <p id="New Question">Fields:</p> -->
+        <input type="button" id="btnAdd" value="SUBMIT QUESTION">
+
+        </div>
+
+            <ul id='thumbsup'>
+
+            </ul>
+    <script src="{% static 'js/T_app.js' %}"></script>
+
+
 {% endblock %}
 
+{% block tail %}
 <script src="{% static 'js/T_app.js' %}"></script>
+<!-- <script src="{% static 'js/X_app.js' %}"></script> -->
+<!-- either:  rectangle with ENTER A Q:  text box & button -->
+
+
+{% endblock %}
