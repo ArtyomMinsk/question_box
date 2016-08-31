@@ -12,7 +12,7 @@ class QuestionSerializer(serializers.ModelSerializer):
 class AnswerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Answer
-        fields = ('id', 'answer_text', 'user_vote', 'question', 'user')
+        fields = ('id', 'answer_text', 'user_up_vote', 'user_down_vote', 'question', 'user')
 
 
 class CommentSerializer(serializers.ModelSerializer):

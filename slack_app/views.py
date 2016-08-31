@@ -2,15 +2,20 @@ from django.shortcuts import render
 from .serializers import QuestionSerializer, AnswerSerializer, CommentSerializer
 from rest_framework import viewsets
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from .models import Question, Answer, Comment
+from django.contrib.auth.views import login
 
 
 # @login_required
 def index(request):
-
     return HttpResponse('sup DAWG')
 
+def custom_login(request):
+    if request.user.is_authenticated():
+        return HttpResponseRedirect('/')
+    else:
+        return login(request)
 
 def question(request):
     return render(request, 'slack_app/question.html')
@@ -33,9 +38,13 @@ def QuestionList(request):
 
     context = {'these_questions': these_questions}
     return render(request, 'slack_app/search.html', context)
->>>>>>> 298784bcd67b60ea18cb35886105993c4ae6b759
 
 
 class QuestionViewSet(viewsets.ModelViewSet):
     serializer_class = QuestionSerializer
-    queryset = Question.objects.all().order_by('title')
+    queryset = Question.objects.all().order_by('id')
+
+
+class AnswerViewSet(viewsets.ModelViewSet):
+    serializer_class = AnswerSerializer
+    queryset = Answer.objects.all()
