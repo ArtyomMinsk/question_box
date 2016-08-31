@@ -8,7 +8,7 @@ from .models import Question, Answer, Comment
 
 # @login_required
 def index(request):
-    return HttpResponse('hello bitches')
+    return HttpResponse('hello world')
 
 
 class QuestionViewSet(viewsets.ModelViewSet):
