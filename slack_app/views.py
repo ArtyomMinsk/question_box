@@ -8,7 +8,30 @@ from .models import Question, Answer, Comment
 
 # @login_required
 def index(request):
-    return HttpResponse('hello bitches')
+    return HttpResponse('sup DAWG')
+
+
+def question(request):
+    return render(request, 'slack_app/question.html')
+
+
+def QuestionList(request):
+    q_id = request.GET.get('id')
+    title = request.GET.get('title')
+    tags = request.GET.get('tags')
+    sort = request.GET.get('sort')
+
+    if q_id is not None:
+        these_questions = Question.objects.filter(id=int(q_id))
+    elif tags is not None:
+        these_questions = Question.objects.filter(title__iexact=title)
+    elif tags is not None:
+        these_questions = Question.objects.filter(tags=tags)
+    elif sort is not None:
+        these_questions = Question.objects.order_by(sort)
+
+    context = {'these_questions': these_questions}
+    return render(request, 'slack_app/search.html', context)
 
 
 class QuestionViewSet(viewsets.ModelViewSet):
