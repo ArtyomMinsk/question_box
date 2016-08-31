@@ -11,14 +11,23 @@ from django.contrib.auth.views import login
 def index(request):
     return HttpResponse('sup DAWG')
 
+
 def custom_login(request):
     if request.user.is_authenticated():
         return HttpResponseRedirect('/')
     else:
         return login(request)
 
+
 def question(request):
     return render(request, 'slack_app/question.html')
+
+
+def answer(request, question_id):
+    context = {
+        'question_id': question_id,
+    }
+    return render(request, 'slack_app/question_answer.html', context)
 
 
 def search(request):

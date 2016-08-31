@@ -5,9 +5,17 @@
 {% endblock %}
 
 {% block body %}
-<h1> Question detail page </h>
-        <div>
-            <ul id="answers">
-            </ul>
-    </div>
+<h1> Question detail page </h1>
+        <p id='shit'></p>
+        <table id="answers">
+
+
+        </table>
+{% endblock %}
+
+{% block scripts %}
+<script>
+      question_id = {{ question_id }}
+</script>
+<script src="{% static 'js/a_app.js' %}"></script>
 {% endblock %}
