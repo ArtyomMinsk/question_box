@@ -14,7 +14,6 @@ urlpatterns = [
             success_url='/'),
             name='register'),
     url(r'^$', views.question, name='question'),
-    # url(r'^answer/$', views.answer, name='answer'),
     url(r'^question/(?P<question_id>[0-9]+)$', views.answer, name='question_detail_page'),
     url(r'^accounts/profile/$', views.question, name='question'),
     url(r'^accounts/login/$', login, name='login'),
