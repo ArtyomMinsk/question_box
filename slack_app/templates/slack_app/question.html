@@ -6,20 +6,21 @@
 
 {% block body %}
 <h1> QUESTIONS </h1>
-
         <div>
-            <ul id="questionlist">
-            </ul>
-    </div>
-     <div id="box4q">
-        <!-- <div id="box4q"> -->
-            <h2>Ask a question:</h2>
-            <textarea cols="65" rows="2">
-            Please enter your question here...
-            </textarea><br>
-            <!-- <p id="New Question">Fields:</p> -->
-            <input type="button" id="btnAdd" value="SUBMIT QUESTION">
+            <ul id="questionlist"></ul>
+        </div>
 
-            </div>
+     <div id="box4q">
+        <h2>Ask a question:</h2><br>
+            <textarea cols="65" rows="1">
+            Please enter your question TITLE here...
+            </textarea><br><br>
+
+            <textarea cols="65" rows="4">
+            Please enter your question DESCRIPTION here...
+            </textarea><br><br>
+
+                <input type="button" id="btnAdd" value="SUBMIT QUESTION">
+    </div>
 
 {% endblock %}
