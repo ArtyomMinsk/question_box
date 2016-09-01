@@ -68,7 +68,6 @@ function putOnPage(response, $q_list) {
     })
 }
 
-
 var $q_list = $("#questionlist")
 $.ajax({ url: '/api/question/' }).done(function(response) {
   putOnPage(getQuestion(response), $q_list);
