@@ -16,6 +16,13 @@
 
   <table id="answers" col width=600px>
  </table>
+
+ <div id="oval4answer">
+    <h2 style="color:black;">I have a better answer:</h2>
+        <textarea cols="65" rows="3" placeholder="Please enter your ANSWER here..."></textarea><br><br>
+        {% csrf_token %}
+            <input type="button" id="btnAddAnswer" value="SUBMIT ANSWER">
+</div>
 {% endblock %}
 
 {% block scripts %}

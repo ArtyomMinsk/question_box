@@ -5,6 +5,10 @@
     margin-top: 35px;
 }
 
+#mkblk {
+    color: black;
+}
+
 #answers {
     font-size: 150%;
     margin-left: 150px;
@@ -39,9 +43,9 @@ h5 {
 }
 
 #click_thumbs {
-    margin-left: 300px;
+    margin-left: 350px;
 }
 
 #down_votes {
-    margin-left: 20px;    
+    margin-left: 20px;
 }
