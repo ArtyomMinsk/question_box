@@ -23,6 +23,7 @@ def question(request):
     return render(request, 'slack_app/question.html')
 
 
+@login_required
 def answer(request, question_id):
     context = {
         'question_id': question_id,
