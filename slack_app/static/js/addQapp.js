@@ -29,33 +29,23 @@ $.ajaxSetup({
 });
 
 
-// ADD A QUESTION
-// $(document).ready(function(){
-//   $('#btnAdd').click(function(){
-//       myKeyVals = JSON.stringify({"results.title": "what is abc 123?", "results.description": "this is a test description for my test ADD.", "results.tags": "test", "results.user": "2"}
-//       $.ajax({
-//             type: 'POST',
-//             url: "/api/question/",
-//             data: myKeyVals,
-//             dataType: "text",
-//             success: function() { alert("Save Complete") },
-//       })
-//   })
-// })
-
-
 $(document).ready(function(){
   $('#btnAdd').click(function(){
-    //   myKeyVals = JSON.stringify({"results.title": "what is abc 123?", "results.description": "this is a test description for my test ADD.", "results.tags": "test", "results.user": "2"})
-    console.log({title: "what is abc 123?", description: "this is a test description for my test ADD.", tags: "test", user:2})
-    // myKeyVals = JSON.stringify({title: "what is abc 123?", description: "this is a test description for my test ADD.", tags: "test", user: "2"})
+      var qtitle = $('#q_title').val()
+      var qdescr = $('#q_description').val()
+      var qtag = "word"//$('#q_tag').val(str(word))
+      var quser = 2//$('#q_user').val(2) gi get
+
+      var myKeyVals = {
+          title: qtitle,
+          description: qdescr,
+          tags: qtag,
+          user: quser
+      }
       $.ajax({
             type: 'POST',
             url: "/api/question/",
-            // data: myKeyVals,
-            data: {title: "what is abc 123?", description: "this is a test description for my test ADD.", tags: "test", user:2},
-            dataType: "json",
-            contentType: "application/json",
+            data: myKeyVals,
             success: function() { alert("Save Complete") },
       })
   })
@@ -64,14 +54,24 @@ $(document).ready(function(){
 // ADD AN ANSWER
 $(document).ready(function(){
   $('#btnAddAnswer').click(function(){
-      myKeyVals = {title: "what is abc 123?", description: "this is a test description for my test ADD.", tags: "test"}
-      var saveData = $.ajax({
+      var atext = $('#a_text').val()
+      var auvote = 1//$('#q_uvote')val()
+      var advote = 1//$('#q_dvote')val()
+      var qid = 1//$('#q_tag').val(str(word))
+      var uid = 2//$('#q_user').val(2) gi get
+
+      var myKeyVals = {
+          answer_text: atext,
+          user_up_vote: auvote,
+          user_down_vote: advote,
+          question: qid,
+          user: uid
+      }
+      $.ajax({
             type: 'POST',
             url: "/api/answer/",
             data: myKeyVals,
-            dataType: "text",
             success: function(resultData) { alert("Save Complete") },
-            error: (function() { alert("Something went wrong") })
       })
   })
 })

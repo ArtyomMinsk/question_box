@@ -8,9 +8,6 @@ class QuestionSerializer(serializers.ModelSerializer):
         model = Question
         fields = ('id', 'title', 'description', 'tags', 'user')
 
-    def create(self, validated_data):
-        print(validated_data)
-
 
 class AnswerSerializer(serializers.ModelSerializer):
     class Meta:
