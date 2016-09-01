@@ -1,10 +1,6 @@
 function putOnPage(response, $vote_list) {
     response.forEach(function(thumb) {
-        var $li = $('<li>').appendTo($vote_list)
-        // var $a = $('<a>').attr('href', '/question/' + question.id).attr('id', question.id).appendTo($li)
-        // var $a = $('<a>').attr('href', '/question/' + question.id).attr('id', question.id)
-        // $a.appendTo($li)
-        var $p = $('<p>').text(thumb.user_up_vote, thumb.user_down_vote).appendTo($li)
+        var $li = $('<li>').text(thumb.user_up_vote + "   " + thumb.user_down_vote).appendTo($vote_list)
         return
     })
 }
@@ -16,6 +12,6 @@ function getVotes(response) {
 }
 
 var $vote_list = $("#thumbsup")
-$.ajax({ url: '/api/Answer/' }).done(function(response) {
+$.ajax({ url: '/api/answer/' }).done(function(response) {
   putOnPage(getVotes(response), $vote_list);
 })

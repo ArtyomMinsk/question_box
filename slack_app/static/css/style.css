@@ -1,0 +1,22 @@
+/*.navbar {
+    position: relative;
+}
+.brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    /*display: block;*/
+
+
+#box4q {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width:900px;
+    height:300px;
+    border:3px;
+    border-radius:55px;
+    background: #b3ffff;
+    solid #000;
+    text-align: center;
+}
