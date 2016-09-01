@@ -60,7 +60,6 @@ function getQuestion(response) {
 function putOnPage(response, $q_list) {
     response.forEach(function(question) {
         var $li = $('<li>').appendTo($q_list)
-        // var $a = $('<a>').attr('href', '/question/' + question.id).attr('id', question.id).appendTo($li)
         var $a = $('<a>').attr('href', '/question/' + question.id).attr('id', question.id)
         $a.appendTo($li)
         var $p = $('<p>').text(question.title).appendTo($a)
