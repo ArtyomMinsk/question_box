@@ -21,3 +21,9 @@ Simply register an account and start using forum. You'll be able to ask and answ
 ## Notes
 
 Version Deployed to Heroku
+
+## Contributors
+T.Robert Ward
+Andrew Musicant
+Richard Brown
+Artsiom Nestsiarenka
