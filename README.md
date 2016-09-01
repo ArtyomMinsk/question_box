@@ -23,7 +23,8 @@ Simply register an account and start using forum. You'll be able to ask and answ
 Version Deployed to Heroku
 
 ## Contributors
-T.Robert Ward
-Andrew Musicant
-Richard Brown
-Artsiom Nestsiarenka
+
+- T.Robert Ward
+- Andrew Musicant
+- Richard Brown
+- Artsiom Nestsiarenka
