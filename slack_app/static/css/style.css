@@ -7,7 +7,28 @@
     height:300px;
     border:3px;
     border-radius:55px;
-    background: #b3ffff;
+    background: #99ccff;
+    solid #000;
+    text-align: center;
+}
+
+p5 {
+    font-size: 60%;
+    margin-left: 350px;
+}
+p6 {
+    margin-left: 25px;
+}
+
+#oval4answer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width:700px;
+    height:210px;
+    border:3px;
+    border-radius:155px;
+    background: #99ccff;
     solid #000;
     text-align: center;
 }

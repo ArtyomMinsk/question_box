@@ -12,15 +12,14 @@
 
      <div id="box4q">
         <h2>Ask a question:</h2><br>
-            <textarea cols="65" rows="1">
-            Please enter your question TITLE here...
-            </textarea><br><br>
+            <textarea placeholder="Please enter your question TITLE here..." cols="65" rows="1"></textarea><br><br>
 
-            <textarea cols="65" rows="4">
-            Please enter your question DESCRIPTION here...
-            </textarea><br><br>
+            <textarea cols="65" rows="4" placeholder="Please enter your question DESCRIPTION here..."></textarea><br><br>
 
                 <input type="button" id="btnAdd" value="SUBMIT QUESTION">
     </div>
+{% endblock %}
 
+{% block tail %}
+<script src="{% static 'js/addQapp.js' %}"></script>
 {% endblock %}
