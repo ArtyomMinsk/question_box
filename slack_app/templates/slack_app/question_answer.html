@@ -7,10 +7,15 @@
 {% block body %}
 <link href="{% static 'css/a_style.css' %}" rel="stylesheet">
 
+  <p id="q_desc"></p>
 
-<!-- <h1> Question detail page </h1> -->
-  <p id='q_desc'></p>
-  <table id="answers"></table>
+  <span id="ans">ANSWERS:</span> <span id="click_thumbs">
+      <img src="{% static 'images/thumbs-up.jpg' %}" alt="thumb" STYLE="width:82px; height:100px;"></span>
+      <span id="down_votes"><img src="{% static 'images/thumbs-down.jpg' %}" alt="thumb"
+          style="width:82px; height:100px;"></span>
+
+  <table id="answers" col width=600px>
+ </table>
 {% endblock %}
 
 {% block scripts %}

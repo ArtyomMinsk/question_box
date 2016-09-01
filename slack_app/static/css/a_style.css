@@ -1,4 +1,47 @@
 #q_desc {
     font-size: 150%;
+    margin-left: 20px;
+    margin-right: 300px;
+    margin-top: 35px;
+}
 
+#answers {
+    font-size: 150%;
+    margin-left: 150px;
+    margin-right: 300px;
+    line-height: 400%;
+
+}
+
+#ans {
+    font-style: italic;
+    font-family: inherit;
+    font-weight: bolder;
+    font-size: 180%;
+    text-decoration: underline;
+    margin-left: 100px;
+}
+
+h4 {
+    margin-left: 120px;
+    margin-right: 300px;
+    border-radius: 13px
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    padding: 20px;
+    padding border-width: 1px;
+}
+
+h5 {
+    text-align: right;
+    font-size: 110%;
+}
+
+#click_thumbs {
+    margin-left: 300px;
+}
+
+#down_votes {
+    margin-left: 20px;    
 }
