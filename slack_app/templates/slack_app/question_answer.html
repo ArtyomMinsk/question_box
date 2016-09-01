@@ -5,17 +5,15 @@
 {% endblock %}
 
 {% block body %}
+<link href="{% static 'css/a_style.css' %}" rel="stylesheet">
+
+
 <!-- <h1> Question detail page </h1> -->
-        <p id='q_desc'></p>
-        <table id="answers">
-
-
-        </table>
+  <p id='q_desc'></p>
+  <table id="answers"></table>
 {% endblock %}
 
 {% block scripts %}
-<script>
-      question_id = {{ question_id }}
-</script>
+<script>question_id = {{ question_id }}</script>
 <script src="{% static 'js/a_app.js' %}"></script>
 {% endblock %}
